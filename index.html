@@ -23,8 +23,8 @@
 	<link href="css/style.css" rel='stylesheet' type='text/css' />
 <!-- //style.css-file -->
 
-<link href="http://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet">
-<link href="http://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
+<!--link href="http://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet"-->
+<!--link href="http://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet"-->
 
 </head>
 <!-- Head -->
@@ -1003,7 +1003,7 @@
 					<textarea name="message" id="message" placeholder="Message..." required=""></textarea>
 					<div class="col-md-6 agileits_agile_labels_mail_left">
 						<input name="code" type="text" id="code" placeholder="Captchas" required="">
-						<img src="http://1.upare.applinzi.com/contact/get_captcha.php" id="captcha" onclick="this.src='http://1.upare.applinzi.com/contact/get_captcha.php?'+Math.random();" />
+						<img src="https://www.upare.com/contact/get_captcha.php" id="captcha" onclick="this.src='https://www.upare.com/contact/get_captcha.php?'+Math.random();" />
 					</div>
 					<div class="submit">
 						<input name="website" type="hidden" id="website" value="wanghao.name">
@@ -1729,7 +1729,7 @@ $(document).ready(function() {
 
 			
 			$.ajax({
-            url: "http://1.upare.applinzi.com/contact/",
+            url: "https://www.upare.com/contact/",
             data: $('#contactMe').serialize(),
 			xhrFields: {
 				withCredentials: true
@@ -1796,7 +1796,7 @@ $(document).ready(function() {
 
 	 {
 
-	 	document.getElementById('captcha').src="http://1.upare.applinzi.com/contact/get_captcha.php?" + Math.random();
+	 	document.getElementById('captcha').src="https://www.upare.com/contact/get_captcha.php?" + Math.random();
 
 	 }
 
