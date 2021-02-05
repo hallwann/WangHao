@@ -1718,7 +1718,7 @@ The control box can support 100 people per class, the user may need to increase 
 				success: function(data){
 					
 					alert(data.message);
-					
+					console.log(data);
 					$("#captcha_src").attr('src',"https://www.upare.com/apis/captcha?type=png&random=" + Math.random());
 					
 				}
