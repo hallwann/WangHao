@@ -953,7 +953,7 @@
 				<h3>contact me</h3>
 			</div>
 			<div class="agileits_agile_labels_mail">
-				<form action="" method="post" id="contactMe">
+				<form action="https://www.upare.com/contact/guestbook" method="post" id="contactMe" target="_blank">
 					<div class="col-md-6 agileits_agile_labels_mail_left">
 						<input type="text" name="name" id="name" placeholder="Name" required="">
 						<input type="text" name="subject" id="subject" placeholder="Subject" required="">
@@ -968,7 +968,7 @@
 					<textarea name="message" id="message" placeholder="Message..." required=""></textarea>
 					<div class="col-md-6 agileits_agile_labels_mail_left">
 						<input name="captcha" type="text" id="captcha" placeholder="Captchas" required="">
-						<img src="https://www.upare.com/apis/captcha?type=png" id="captcha_src" onclick="this.src='https://www.upare.com/apis/captcha?type=png&random='+Math.random();" />
+						<img src="https://www.upare.com/captcha?type=png" id="captcha_src" onclick="this.src='https://www.upare.com/captcha?type=png&random='+Math.random();" />
 					</div>
 					<div class="submit">
 						<input name="website" type="hidden" id="website" value="wanghao.name">
@@ -1705,31 +1705,7 @@ The control box can support 100 people per class, the user may need to increase 
 		});
 		<!--accordion end-->
 		
-		$('#contactMe').submit(function() {  
-
-			$.ajax({
-				url: "https://www.upare.com/contact/guestbook",
-				data: $('#contactMe').serialize(),
-
-				type: "POST",
-
-				dataType: "JSON",
-				
-				success: function(data){
-					
-					alert(data.message);
-					
-					$("#captcha_src").attr('src',"https://www.upare.com/apis/captcha?type=png&random=" + Math.random());
-					
-				}
-
-			});
-			
-			
-			return false; 
-
-
-		});
+		
 	});
 	
 </script>
