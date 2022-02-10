@@ -995,7 +995,7 @@ div#worksModal1,div#worksModal2,div#worksModal3,div#worksModal4,div#worksModal5,
     width: 98% !important;
     margin-bottom: 20px;
 }
-.agileits_agile_labels_mail input[type="submit"] {
+.agileits_agile_labels_mail input[type="button"] {
     outline: none;
     background: #02bdc6;
     border: none;
@@ -1011,7 +1011,7 @@ div#worksModal1,div#worksModal2,div#worksModal3,div#worksModal4,div#worksModal5,
 .submit {
     text-align: center;
 }
-.agileits_agile_labels_mail input[type="submit"]:hover{
+.agileits_agile_labels_mail input[type="button"]:hover{
 	background: #000;
 }
 .agileits_agile_labels_mail input[type="email"],.agileits_agile_labels_mail input[type="text"]:nth-child(1){
@@ -2297,7 +2297,7 @@ a.weixin {
 		padding: 20px;
 		letter-spacing: 1px;
 	}
-	.agileits_agile_labels_mail input[type="submit"] {
+	.agileits_agile_labels_mail input[type="button"] {
 		padding: 6px 25px;
 	}
 	.modal-dialog {
